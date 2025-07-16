@@ -9,7 +9,7 @@ public class ToolClick : MonoBehaviour
     private void OnMouseDown()
     {
         if (isUsed) return;
-
+        if(FindObjectOfType<PumpkinManager>().currentStage != toolIndex) return;
         // Tell the manager to progress
         FindObjectOfType<PumpkinManager>().UseTool(toolIndex);
 

@@ -6,7 +6,7 @@ public class PumpkinManager : MonoBehaviour
 {
     public GameObject[] pumpkinStages; // [0]=Stage1, [1]=Stage2, [2]=Stage3
     public ParticleSystem carvingEffect;
-    private int currentStage = 0;
+    public int currentStage = 0;
     public TextMeshProUGUI winMessage; // Assign in inspector
 
     private bool hasWon = false;
